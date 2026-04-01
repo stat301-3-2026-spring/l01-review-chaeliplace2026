@@ -25,7 +25,7 @@ citation-location: margin
 
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
-[https://github.com/stat301-3-2026-spring/l01-review-chaeliplace2026.git](https://github.com/stat301-3-2026-spring/l01-review-chaeliplace2026.git)
+[L01 Github repo link](https://github.com/stat301-3-2026-spring/l01-review-chaeliplace2026.git)
 :::
 
 ## Overview
@@ -43,7 +43,23 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Split the data
+
+- EDA on training data
+
+- Defining resamples
+
+- Defining preprocessing recipes, prep and bake
+
+- Specifying model specifications and workflow
+
+- Fitting resamples
+
+- Evaluating average performance across resamples
+
+- Fitting the best model(s) on all training data
+
+- Evaluating final model on the testing data
 
 :::
 
@@ -54,7 +70,9 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Supervised learning: data is labeled, goal is predicting outcomes (regression, classification). There is a target variable that supervises the process.
+
+- Unsupervised learning: data is unlabeled, goal is identifying patterns in the data rather than predicting outcomes. There is no outcome of interest, just understanding the structure of the data.
 
 :::
 
@@ -67,7 +85,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Identifying trends from existing/past data, describing structure/relationships in the data. (typically parametric?)
 
 :::
 
@@ -76,7 +94,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Testing hypotheses about how/why variables directly influence an outcome variable to make inferences about causality
 
 :::
 
@@ -85,7 +103,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Using data to make the best possible prediction without really caring about how/why variables influence the outcome
 
 :::
 
@@ -100,7 +118,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A model is built on mechanistic assumptions about how variables relate to the outcome
 
 :::
 
@@ -111,7 +129,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+No assumptions are made about how variables relate to the outcome and the learning process is entirely data-driven
 
 :::
 
@@ -122,7 +140,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic and parametric models both make assumptions, either about how variables relate to each other or about an equation that describes the relationship of variables to the outcome. *I think* Empirically driven and nonparametric models don't make assumptions about these relationships or fit to an equation, instead relying only on the data.
 
 :::
 
@@ -133,7 +151,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model is easier to interpret usually because it incorporates known facts/assumptions into the modeling process, so it's easier to understand how the model learns. With empirically driven models, we don't necessarily understand what specific things in the data the model is learning from and how/why.
 
 :::
 
@@ -144,7 +162,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+
 
 :::
 
