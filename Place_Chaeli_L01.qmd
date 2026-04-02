@@ -162,7 +162,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-
+Empirically driven models are more flexible because they don't make assumptions about the data or its form and instead let the data drive the model.
 
 :::
 
@@ -173,7 +173,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models tend to have lower variance but higher bias, meaning they are less susceptible to overfitting but make more assumptions that might overlook more complex patterns. Empirically driven models tend to have higher variance but lower bias, meaning they are more prone to overfitting but are better at finding/describing more complex patterns in the data.
 
 :::
 
@@ -184,7 +184,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Regression problems produce predictions for numeric outcome variables, i.e. they return a specific numeric value. Classification problems produce predictions for categorical outcome variables, i.e. they return a specific category.
 
 :::
 
@@ -195,7 +195,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+It ensures that we have all different classes or ranges of values represented in our smaller split datasets so that we don't accidentally create an imbalanced dataset or don't get good coverage of the range of possible values.
 
 :::
 
@@ -206,7 +206,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+V-fold cross validation splits the data into a specified number of even groups (folds). One fold is reserved as the test set, and the remaining number acts as the training set. This is repeated until every fold has served as the test set. The data is again split into different folds for each repeat, and the whole process begins again. The performance metrics as determined by evaluation on the test set is averaged across all folds and repeats. This allows us to get an idea of how our model performs across different test datasets, which can help us identify issues like overfitting/high variance and have a more accurate picture of how generalizable our model is.
 
 :::
 
@@ -217,7 +217,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Bootstrap resampling is better for small datasets because you could end up with insufficient testing data with v-fold cross validation and get very different train/test splits. Bootstrap performs more resamples and can reuse data to make the most of small datasets. 
 
 :::
 
@@ -228,7 +228,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Model tuning is used to optimize model hyperparameters by trying out a range of values for each hyperparameter and trying different combinations of hyperparameter values to find the combination the performs the best. We use it because the values we choose for hyperparameters directly specifies how the model is built/how it learns, and it is often difficult to pick optimal hyperparameters just by guessing, especially when we have multiple hyperparameters and could have many different combinations.
 
 :::
 
@@ -239,7 +239,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+RMSE, MAE, R squared
 
 :::
 
@@ -248,7 +248,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+ROC AUC, accuracy
 
 :::
 
@@ -263,7 +263,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential. They want to know how a variable (number of service calls) affects the outcome; they are not interested just in predicting and outcome but want to test the hypothesis that this specific variable influences the outcome.
 
 :::
 
@@ -272,7 +272,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Predictive. They don't care how or why different variables relate to the outcome, just how they can be used to make an accurate prediction.
 
 :::
 
