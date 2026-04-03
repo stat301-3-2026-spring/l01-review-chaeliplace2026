@@ -45,15 +45,19 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 - Split the data
 
-- EDA on training data
+- EDA on training data (check for imbalance, explore feature engineering)
 
-- Defining resamples
+- Defining resamples (fold training data)
 
 - Defining preprocessing recipes, prep and bake
 
-- Specifying model specifications and workflow
+- Defining model specifications (engine and mode) with tuning parameters
 
-- Fitting resamples
+- Storing tuning parameters, update when needed, define tuning grid
+
+- Setting the workflow (recipe and model)
+
+- Tuning the model grid (with resamples)
 
 - Evaluating average performance across resamples
 
@@ -85,7 +89,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Identifying trends from existing/past data, describing structure/relationships in the data. (typically parametric?)
+Identifying trends from existing/past data, describing or illustrating structure in the data that is available
 
 :::
 
@@ -94,7 +98,7 @@ Identifying trends from existing/past data, describing structure/relationships i
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Testing hypotheses about how/why variables directly influence an outcome variable to make inferences about causality
+Testing hypotheses about how/why variables influence an outcome variable, taking into account underlying assumptions to draw conclusions about relationships between variables
 
 :::
 
@@ -103,7 +107,7 @@ Testing hypotheses about how/why variables directly influence an outcome variabl
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Using data to make the best possible prediction without really caring about how/why variables influence the outcome
+Using data to make the best possible prediction on new data without really caring about how/why variables influence the outcome
 
 :::
 
@@ -118,7 +122,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A model is built on mechanistic assumptions about how variables relate to the outcome
+A model is built on mechanistic assumptions about how variables relate to each other or the outcome. For example, coefficients might be derived from literature or known scientific laws.
 
 :::
 
@@ -129,7 +133,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-No assumptions are made about how variables relate to the outcome and the learning process is entirely data-driven
+No assumptions are made about how variables relate to the outcome and the learning process is entirely driven by the observed data rather than building in scientific laws or principles.
 
 :::
 
@@ -140,7 +144,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Mechanistic and parametric models both make assumptions, either about how variables relate to each other or about an equation that describes the relationship of variables to the outcome. *I think* Empirically driven and nonparametric models don't make assumptions about these relationships or fit to an equation, instead relying only on the data.
+Mechanistic and empirically driven refer to how the model is constructed, while parametric and nonparametric refer to the mathematical form of the model. While mechanistic models are often parametric and empirically driven models are often nonparametric, these categories do not perfectly overlap. However, mechanistic and parametric models both make assumptions, either about how variables relate to each other or about the form of the equation that describes the relationship of variables to the outcome. Empirically driven and nonparametric models don't make assumptions about these relationships or fit to an equation, instead relying only on the data. That is, mechanistic/parametric are more structured, and empirically driven/nonparametric are more flexible.
 
 :::
 

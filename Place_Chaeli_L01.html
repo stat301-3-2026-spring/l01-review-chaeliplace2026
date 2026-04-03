@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Chaeli Place">
-<meta name="dcterms.date" content="2026-04-02">
+<meta name="dcterms.date" content="2026-04-03">
 
 <title>L01 Chaeli Place</title>
 <style>
@@ -2229,7 +2229,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 2, 2026</p>
+      <p class="date">April 3, 2026</p>
     </div>
   </div>
   
@@ -2276,11 +2276,13 @@ vertical-align: -.125em;
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>Split the data</p></li>
-<li><p>EDA on training data</p></li>
-<li><p>Defining resamples</p></li>
+<li><p>EDA on training data (check for imbalance, explore feature engineering)</p></li>
+<li><p>Defining resamples (fold training data)</p></li>
 <li><p>Defining preprocessing recipes, prep and bake</p></li>
-<li><p>Specifying model specifications and workflow</p></li>
-<li><p>Fitting resamples</p></li>
+<li><p>Defining model specifications (engine and mode) with tuning parameters</p></li>
+<li><p>Storing tuning parameters, update when needed, define tuning grid</p></li>
+<li><p>Setting the workflow (recipe and model)</p></li>
+<li><p>Tuning the model grid (with resamples)</p></li>
 <li><p>Evaluating average performance across resamples</p></li>
 <li><p>Fitting the best model(s) on all training data</p></li>
 <li><p>Evaluating final model on the testing data</p></li>
@@ -2323,7 +2325,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Identifying trends from existing/past data, describing structure/relationships in the data. (typically parametric?)</p>
+<p>Identifying trends from existing/past data, describing or illustrating structure in the data that is available</p>
 </div>
 </div>
 </section>
@@ -2339,7 +2341,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Testing hypotheses about how/why variables directly influence an outcome variable to make inferences about causality</p>
+<p>Testing hypotheses about how/why variables influence an outcome variable, taking into account underlying assumptions to draw conclusions about relationships between variables</p>
 </div>
 </div>
 </section>
@@ -2355,7 +2357,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Using data to make the best possible prediction without really caring about how/why variables influence the outcome</p>
+<p>Using data to make the best possible prediction on new data without really caring about how/why variables influence the outcome</p>
 </div>
 </div>
 </section>
@@ -2376,7 +2378,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A model is built on mechanistic assumptions about how variables relate to the outcome</p>
+<p>A model is built on mechanistic assumptions about how variables relate to each other or the outcome. For example, coefficients might be derived from literature or known scientific laws.</p>
 </div>
 </div>
 </section>
@@ -2393,7 +2395,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>No assumptions are made about how variables relate to the outcome and the learning process is entirely data-driven</p>
+<p>No assumptions are made about how variables relate to the outcome and the learning process is entirely driven by the observed data rather than building in scientific laws or principles.</p>
 </div>
 </div>
 </section>
@@ -2410,7 +2412,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Mechanistic and parametric models both make assumptions, either about how variables relate to each other or about an equation that describes the relationship of variables to the outcome. <em>I think</em> Empirically driven and nonparametric models don’t make assumptions about these relationships or fit to an equation, instead relying only on the data.</p>
+<p>Mechanistic and empirically driven refer to how the model is constructed, while parametric and nonparametric refer to the mathematical form of the model. While mechanistic models are often parametric and empirically driven models are often nonparametric, these categories do not perfectly overlap. However, mechanistic and parametric models both make assumptions, either about how variables relate to each other or about the form of the equation that describes the relationship of variables to the outcome. Empirically driven and nonparametric models don’t make assumptions about these relationships or fit to an equation, instead relying only on the data. That is, mechanistic/parametric are more structured, and empirically driven/nonparametric are more flexible.</p>
 </div>
 </div>
 </section>
