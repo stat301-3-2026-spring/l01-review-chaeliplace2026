@@ -155,7 +155,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A mechanistic model is easier to interpret usually because it incorporates known facts/assumptions into the modeling process, so it's easier to understand how the model learns. With empirically driven models, we don't necessarily understand what specific things in the data the model is learning from and how/why.
+A mechanistic model is easier to interpret usually because it incorporates known facts/assumptions into the modeling process, so it's easier to understand how the model learns and why you get the results you get. With empirically driven models, we don't necessarily understand what specific things in the data the model is learning from and how/why.
 
 :::
 
@@ -166,7 +166,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Empirically driven models are more flexible because they don't make assumptions about the data or its form and instead let the data drive the model.
+Empirically driven models are more flexible because they don't make assumptions about the data and don't incorporate scientific laws, instead letting the data drive the model fitting.
 
 :::
 
@@ -177,7 +177,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Mechanistic models tend to have lower variance but higher bias, meaning they are less susceptible to overfitting but make more assumptions that might overlook more complex patterns. Empirically driven models tend to have higher variance but lower bias, meaning they are more prone to overfitting but are better at finding/describing more complex patterns in the data.
+Mechanistic models tend to have lower variance but higher bias, meaning they are less susceptible to overfitting but make more assumptions that might overlook more complex patterns. Empirically driven models tend to have higher variance but lower bias, meaning they are more sensitive to noise/prone to overfitting but are better at finding/describing more complex patterns in the data.
 
 :::
 
@@ -188,7 +188,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Regression problems produce predictions for numeric outcome variables, i.e. they return a specific numeric value. Classification problems produce predictions for categorical outcome variables, i.e. they return a specific category.
+Regression problems produce predictions for continuous numeric outcome variables, i.e. they return a specific numeric value. Classification problems produce predictions for discrete categorical outcome variables, i.e. they return a specific category.
 
 :::
 
@@ -199,7 +199,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-It ensures that we have all different classes or ranges of values represented in our smaller split datasets so that we don't accidentally create an imbalanced dataset or don't get good coverage of the range of possible values.
+It ensures that we have all different classes or ranges of values represented in our smaller split datasets in the same proportion as the original dataset so that we don't accidentally create an imbalanced dataset or don't get good coverage of the range of possible values. It's especially important if we have a small class that might not be sufficiently represented in our splits if left to chance.
 
 :::
 
@@ -210,7 +210,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-V-fold cross validation splits the data into a specified number of even groups (folds). One fold is reserved as the test set, and the remaining number acts as the training set. This is repeated until every fold has served as the test set. The data is again split into different folds for each repeat, and the whole process begins again. The performance metrics as determined by evaluation on the test set is averaged across all folds and repeats. This allows us to get an idea of how our model performs across different test datasets, which can help us identify issues like overfitting/high variance and have a more accurate picture of how generalizable our model is.
+V-fold cross validation splits the data into a specified number of even groups (folds). One fold is reserved as the test set, and the remaining number acts as the training set. This is repeated until every fold has served as the test set. The data is again split into different folds for each repeat, and the whole process begins again. The performance metrics as determined by evaluation on the test set is averaged across all folds and repeats. This allows us to get an idea of how our model performs across different test datasets, which can help us identify issues like overfitting/high variance and have a more stable, accurate picture of how generalizable our model is.
 
 :::
 
