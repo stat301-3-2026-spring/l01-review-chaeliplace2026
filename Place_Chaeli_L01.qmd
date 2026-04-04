@@ -232,7 +232,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Model tuning is used to optimize model hyperparameters by trying out a range of values for each hyperparameter and trying different combinations of hyperparameter values to find the combination the performs the best. We use it because the values we choose for hyperparameters directly specifies how the model is built/how it learns, and it is often difficult to pick optimal hyperparameters just by guessing, especially when we have multiple hyperparameters and could have many different combinations.
+Model tuning is used to optimize model hyperparameters by trying out a range of values for each hyperparameter and trying different combinations of hyperparameter values to find the combination that allows the model to perform the best. We use it because the values we choose for hyperparameters directly specifies how the model is built/how it learns, and defaults are usually not optimal and it is often difficult to pick optimal hyperparameters just by guessing, especially when we have multiple hyperparameters and could have many different combinations.
 
 :::
 
@@ -276,7 +276,7 @@ Inferential. They want to know how a variable (number of service calls) affects 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Predictive. They don't care how or why different variables relate to the outcome, just how they can be used to make an accurate prediction.
+Predictive. The goal is not to understand how or why different variables relate to the outcome but rather how they can be used to make an accurate prediction.
 
 :::
 

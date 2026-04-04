@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Chaeli Place">
-<meta name="dcterms.date" content="2026-04-03">
+<meta name="dcterms.date" content="2026-04-04">
 
 <title>L01 Chaeli Place</title>
 <style>
@@ -2229,7 +2229,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 3, 2026</p>
+      <p class="date">April 4, 2026</p>
     </div>
   </div>
   
@@ -2429,7 +2429,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A mechanistic model is easier to interpret usually because it incorporates known facts/assumptions into the modeling process, so it’s easier to understand how the model learns. With empirically driven models, we don’t necessarily understand what specific things in the data the model is learning from and how/why.</p>
+<p>A mechanistic model is easier to interpret usually because it incorporates known facts/assumptions into the modeling process, so it’s easier to understand how the model learns and why you get the results you get. With empirically driven models, we don’t necessarily understand what specific things in the data the model is learning from and how/why.</p>
 </div>
 </div>
 </section>
@@ -2446,7 +2446,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Empirically driven models are more flexible because they don’t make assumptions about the data or its form and instead let the data drive the model.</p>
+<p>Empirically driven models are more flexible because they don’t make assumptions about the data and don’t incorporate scientific laws, instead letting the data drive the model fitting.</p>
 </div>
 </div>
 </section>
@@ -2463,7 +2463,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Mechanistic models tend to have lower variance but higher bias, meaning they are less susceptible to overfitting but make more assumptions that might overlook more complex patterns. Empirically driven models tend to have higher variance but lower bias, meaning they are more prone to overfitting but are better at finding/describing more complex patterns in the data.</p>
+<p>Mechanistic models tend to have lower variance but higher bias, meaning they are less susceptible to overfitting but make more assumptions that might overlook more complex patterns. Empirically driven models tend to have higher variance but lower bias, meaning they are more sensitive to noise/prone to overfitting but are better at finding/describing more complex patterns in the data.</p>
 </div>
 </div>
 </section>
@@ -2481,7 +2481,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Regression problems produce predictions for numeric outcome variables, i.e. they return a specific numeric value. Classification problems produce predictions for categorical outcome variables, i.e. they return a specific category.</p>
+<p>Regression problems produce predictions for continuous numeric outcome variables, i.e. they return a specific numeric value. Classification problems produce predictions for discrete categorical outcome variables, i.e. they return a specific category.</p>
 </div>
 </div>
 </section>
@@ -2498,7 +2498,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>It ensures that we have all different classes or ranges of values represented in our smaller split datasets so that we don’t accidentally create an imbalanced dataset or don’t get good coverage of the range of possible values.</p>
+<p>It ensures that we have all different classes or ranges of values represented in our smaller split datasets in the same proportion as the original dataset so that we don’t accidentally create an imbalanced dataset or don’t get good coverage of the range of possible values. It’s especially important if we have a small class that might not be sufficiently represented in our splits if left to chance.</p>
 </div>
 </div>
 </section>
@@ -2515,7 +2515,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>V-fold cross validation splits the data into a specified number of even groups (folds). One fold is reserved as the test set, and the remaining number acts as the training set. This is repeated until every fold has served as the test set. The data is again split into different folds for each repeat, and the whole process begins again. The performance metrics as determined by evaluation on the test set is averaged across all folds and repeats. This allows us to get an idea of how our model performs across different test datasets, which can help us identify issues like overfitting/high variance and have a more accurate picture of how generalizable our model is.</p>
+<p>V-fold cross validation splits the data into a specified number of even groups (folds). One fold is reserved as the test set, and the remaining number acts as the training set. This is repeated until every fold has served as the test set. The data is again split into different folds for each repeat, and the whole process begins again. The performance metrics as determined by evaluation on the test set is averaged across all folds and repeats. This allows us to get an idea of how our model performs across different test datasets, which can help us identify issues like overfitting/high variance and have a more stable, accurate picture of how generalizable our model is.</p>
 </div>
 </div>
 </section>
@@ -2549,7 +2549,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Model tuning is used to optimize model hyperparameters by trying out a range of values for each hyperparameter and trying different combinations of hyperparameter values to find the combination the performs the best. We use it because the values we choose for hyperparameters directly specifies how the model is built/how it learns, and it is often difficult to pick optimal hyperparameters just by guessing, especially when we have multiple hyperparameters and could have many different combinations.</p>
+<p>Model tuning is used to optimize model hyperparameters by trying out a range of values for each hyperparameter and trying different combinations of hyperparameter values to find the combination that allows the model to perform the best. We use it because the values we choose for hyperparameters directly specifies how the model is built/how it learns, and defaults are usually not optimal and it is often difficult to pick optimal hyperparameters just by guessing, especially when we have multiple hyperparameters and could have many different combinations.</p>
 </div>
 </div>
 </section>
@@ -2617,7 +2617,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Predictive. They don’t care how or why different variables relate to the outcome, just how they can be used to make an accurate prediction.</p>
+<p>Predictive. The goal is not to understand how or why different variables relate to the outcome but rather how they can be used to make an accurate prediction.</p>
 </div>
 </div>
 </section>
